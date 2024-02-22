@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    font-size: 1.6rem;
+    //1 rem = 10px car le rem se refère a l'élément racine.
+}
+
+// Import + alias dans le fichier 
+// @use 'variables' as v;
+// @use 'mixins' as m;
+// @use 'reset';
