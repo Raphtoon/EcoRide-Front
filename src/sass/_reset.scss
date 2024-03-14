@@ -1,20 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Roboto&display=swap");
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    max-width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    font-size: 1.6rem;
-    //1 rem = 10px car le rem se refère a l'élément racine.
+  max-width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  font-size: 1.6rem;
+  //1 rem = 10px car le rem se refère a l'élément racine.
 }
 
-// Import + alias dans le fichier 
+// Import + alias dans le fichier
 // @use 'variables' as v;
 // @use 'mixins' as m;
 // @use 'reset';

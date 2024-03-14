@@ -1,0 +1,214 @@
+@use "_reset.scss";
+@use "variables" as v;
+
+.error {
+  padding: 1rem;
+  border: 1px black solid;
+  border-radius: 5px;
+  color: red;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+.afterScroll {
+  background-color: v.$color_Primary_two;
+}
+button {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+
+  @media screen and (max-width: v.$sm-breakpoint) {
+    width: 80%;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+// Header & Footer
+.header_container {
+  min-height: 5rem;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  // background-color: v.$color_Primary;
+  background-color: black;
+  img {
+    cursor: pointer;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3%;
+
+    @media screen and (max-width: 425px) {
+      width: 4rem;
+    }
+  }
+}
+
+.setHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+.sizePage {
+  padding: 3rem;
+  min-height: 100vh;
+  background-color: v.$color_Primary;
+}
+
+.containerItemHome {
+  margin-top: 10rem;
+  border-radius: 1rem;
+  width: 100%;
+  height: 50vh;
+  background-image: url(../images/8904913.jpg);
+  background-position: center bottom 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .desc {
+    padding-top: 8rem;
+    border-radius: 1rem;
+    max-width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    text-align: center;
+
+    @media screen and (max-width: v.$xs-breakpoint) {
+      padding: 0rem;
+    }
+  }
+}
+
+// ################################################################ Trajet Component ################################################################
+.containerItemRide {
+  margin-top: 10rem;
+  border-radius: 1rem;
+  width: 100%;
+  height: 50vh;
+  background-image: url(../images/order.jpg);
+  background-position: center bottom 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+}
+// ################################################################ Detail Component ################################################################
+.containerBaseUnderHeader {
+  margin-top: 10rem;
+  border-radius: 1rem;
+  width: 100%;
+  height: 50vh;
+  background-position: center bottom 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  iframe {
+    width: 20vw;
+    height: fit-content;
+  }
+}
+// ################################################################ Formulaire ################################################################
+.formContainer {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/car.jpg");
+  background-position: center top 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: black;
+}
+
+.formStyle {
+  width: fit-content;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .form-group {
+    margin: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input,
+  select {
+    width: 80%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  textarea {
+    width: 80%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    height: 20vh;
+  }
+
+  button {
+    margin-top: 4rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+
+    @media screen and (max-width: v.$sm-breakpoint) {
+      width: 80%;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  }
+}
+
+// ################################################################ Formulaire ################################################################
+.ant-menu-submenu {
+  width: 9em;
+}
+
+.ant-menu-light {
+  background-color: v.$color_Primary;
+  border-radius: 20%;
+}
+
+// ################################################################ Formulaire ################################################################
+.displayTrajets {
+  width: 100%;
+  min-height: 50vh;
+}
